@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Signup</title>
+{% endblock %}
+
+{% block body %}
+
+  <div class="container" id="header">
+    <div class="flexrow-container">
+      <button id="theme-toggle" class="theme-btn">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    <h1 id="title">Who are you?<div id="border"></div></h1>
+  </div>
+
+  <div class="container" id="form">
+    <form action="signup" method="post" id="login-form">
+      <input id="username" name="username" type="text" placeholder="Username" autocomplete="off" required>
+      <input id="password" name="password" type="password" placeholder="Password" autocomplete="off" required>
+      <input id="confirmation" name="confirmation" type="password" placeholder="Confirm Your Password" autocomplete="off" required>
+      <button id="login-btn" type="submit">Sign up</button>
+    </form>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>What To Do?</title>
+{% endblock %}
+
+{% block body %}
+
+  <div class="container" id="header">
+    <div class="flexrow-container">
+      <button id="theme-toggle" class="theme-btn">
+        <i class="fas fa-moon"></i>
+      </button>
+      <form action="{{ url_for('logout') }}" method="post">
+        <button id="logout-btn" class="btn">Logout</button>
+      </form>
+    </div>
+    <h1 id="title">What To Do?<div id="border"></div></h1>
+  </div>
+
+  <p id="time"></p>
+
+  <div class="container" id="form">
+    <form>
+      <input id="todo-input" name="content" type="text" placeholder="Add a task..." autocomplete="off">
+      <button id="todo-btn" type="submit">Add</button>
+    </form>
+  </div>
+
+  
+  <div class="container" id="mylist">
+    <ul id="todo-list">
+      {% for task in tasks %}
+        <!-- List of tasks will be added here -->
+         <li class="todo-item {% if task.completed %}done{% endif %}" data-id="{{ task.id }}">
+          <input type="checkbox" class="checkbox" {% if task.completed == 1 %}checked{% endif %}>
+          <span>{{ task.content }}</span>
+          <span>{{ task.date_created.date() }}</span>
+          <button class="delete-btn"><i class="fas fa-trash"></i></button>
+         </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+{% endblock %}
