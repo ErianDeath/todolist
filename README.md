@@ -55,28 +55,42 @@ This is a simple TodoList application built using Flask. It allows users to crea
 2. Register a new account or log in with an existing account.
 3. Create, view, and manage your tasks.
 
-## Project Structure
+## Testing
 
-```
-todolist-app/
-├── app/
-│   ├── __init__.py          # Flask application initialization
-│   ├── models.py            # Database models (User, Task)
-│   ├── routes.py            # Application routes and views
-│   ├── forms.py             # WTForms form classes
-│   └── templates/           # Jinja2 templates
-│       ├── base.html        # Base template
-│       ├── login.html       # Login page
-│       ├── register.html    # Registration page
-│       ├── tasks.html       # Task list page
-│       └── create_task.html # New task form
-├── migrations/              # Database migrations
-├── venv/                    # Virtual environment
-├── config.py               # Configuration settings
-├── requirements.txt        # Project dependencies
-└── run.py                 # Application entry point
-```
+To run the tests for this application, use the following command:
+    ```bash
+    pytest
+    ```
 
+Make sure you have `pytest` installed in your virtual environment. You can add it to your `requirements.txt` or install it separately using:
+    ```bash
+    pip install pytest
+    ```
 
+## Contributing
 
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
+    ```bash
+    git checkout -b feature-name
+    ```
+3. Make your changes and commit them with descriptive messages:
+    ```bash
+    git commit -m "Description of the feature or fix"
+    ```
+4. Push your changes to your forked repository:
+    ```bash
+    git push origin feature-name
+    ```
+5. Create a pull request to the main repository. Provide a clear description of your changes and the reasons for them.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out to the project maintainer at [your-email@example.com].
 
