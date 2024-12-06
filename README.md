@@ -57,7 +57,26 @@ This is a simple TodoList application built using Flask. It allows users to crea
 
 ## Project Structure
 
-The project is organized as follows:
+```
+todolist-app/
+├── app/
+│   ├── __init__.py          # Flask application initialization
+│   ├── models.py            # Database models (User, Task)
+│   ├── routes.py            # Application routes and views
+│   ├── forms.py             # WTForms form classes
+│   └── templates/           # Jinja2 templates
+│       ├── base.html        # Base template
+│       ├── login.html       # Login page
+│       ├── register.html    # Registration page
+│       ├── tasks.html       # Task list page
+│       └── create_task.html # New task form
+├── migrations/              # Database migrations
+├── venv/                    # Virtual environment
+├── config.py               # Configuration settings
+├── requirements.txt        # Project dependencies
+└── run.py                 # Application entry point
+```
+
 
 
 
