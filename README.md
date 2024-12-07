@@ -22,8 +22,8 @@ This is a simple TodoList application built using Flask. It allows users to crea
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/todolist-app.git
-    cd todolist-app
+    git clone https://github.com/ErianDeath/todolist.git
+    cd todolist
     ```
 
 2. Create a virtual environment and activate it:
@@ -39,9 +39,7 @@ This is a simple TodoList application built using Flask. It allows users to crea
 
 4. Set up the database:
     ```bash
-    flask db init
-    flask db migrate -m "Initial migration."
-    flask db upgrade
+    python init_db.py
     ```
 
 5. Run the application:
