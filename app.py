@@ -9,7 +9,7 @@ from sqlalchemy.exc import SQLAlchemyError
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tmp/test.db' 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db' 
 # 3 slashes is relative path, 4 slashes is absolute path
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = '123'
